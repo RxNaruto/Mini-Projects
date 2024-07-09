@@ -18,7 +18,7 @@ app.post("/",async(req,res)=>{
      res.status(200).json({
          message: "Job added"
      })
-     await new Promise(resolve=>setTimeout(resolve,3000));
+     
    } catch (error) {
     console.log(error);
     res.status(500).json("Internal Server error");
